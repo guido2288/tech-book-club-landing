@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Martian Mono", monospace;
+    font-size: 16px;
 }
 
 :root{
@@ -26,9 +31,115 @@
 
     --text-gradient:(linear-gradient(107deg, rgba(255,154,96,1) -11.37%, rgba(6,38,48,1) 61.84%));
     --gradient:linear-gradient(90deg, rgba(255,239,229,1) 0%, rgba(255,245,239,1) 100%);
+
+    /* Font Family */
+    /* font-family: "Inter", sans-serif; */
 }
 
 
+header{
+    background-color: #FFF5EF;
+    background-image: url("./assets/images/pattern-dark-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    padding: 24px 16px;
+}
+
+header nav{
+    margin-bottom: 48px;
+}
+
+.left-hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-hero h1{
+    font-size: 38px;    
+    line-height: 120%;
+    letter-spacing: -2px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(290deg, rgba(255,154,96,1) 0%, rgba(6,38,48,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+}
+
+.left-hero p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #385159;
+    margin-bottom: 32px;      
+}
+
+.left-hero button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 24px;
+    background: transparent;
+    border-radius: 8px;
+    border: solid 2px #062630;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.left-hero button:hover{
+    cursor: pointer;
+    background: -webkit-linear-gradient(90deg, rgba(255,239,229,1) 0%, rgba(255,245,239,1) 100%);
+}
+
+.avatars-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 64px;
+}
+
+.avatars-container img{
+    width: 30%;
+}
+
+.start-container{
+    display: flex;
+    width: 50%;
+}
+
+.avatar-text span{
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -1px;
+    color: #385159;
+}
+
+.right-hero img{
+    width: 100%;
+}
 
 
+/* Tablet */
 
+@media (min-width: 767px) {
+    header{
+        padding: 32px;
+    }
+    header nav{
+        margin-bottom: 64px;
+    }
+    .left-hero h1{
+        font-size: 62px;
+    }
+    .left-hero button{
+        max-width: 380px;
+    }
+}
+
+
+/* Desktop*/
