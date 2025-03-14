@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* Neutral */
+
+    --neutral900:(#062630);
+    --neutral700:(#385159);
+    --neutral200:(#E6E1DF);
+    --neutral100:(#FAF5F3);
+    --neutral0:(#FFFFFF);
+
+
+    /* Light Salmon */
+
+    --light-salmon500:(#FEA36F);
+    --light-salmon100:(#FFE2D1);
+    --light-salmon50:(#FFF5EF);
+
+
+    /* Gradient */
+
+    --text-gradient:(linear-gradient(107deg, rgba(255,154,96,1) -11.37%, rgba(6,38,48,1) 61.84%));
+    --gradient:linear-gradient(90deg, rgba(255,239,229,1) 0%, rgba(255,245,239,1) 100%);
+}
+
+
+
+
+
