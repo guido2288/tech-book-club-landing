@@ -315,6 +315,30 @@ h2{
     cursor: pointer;
 }
 
+.reviews-section {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.reviews-section p{
+    padding: 32px 0;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: #062630;
+}
+
+.reviews-section span{
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #385159;
+    font-family: "Inter", sans-serif;
+}
+
 /* Tablet */
 
 @media (min-width: 767px) {
@@ -374,6 +398,20 @@ h2{
     .membership-card{
         width: 340px;
     }
+    .reviews-section {
+        margin: 0 32px 80px 32px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .reviews-section p{
+        padding: 32px 0;
+        font-size: 34px;
+        line-height: 130%;
+        letter-spacing: -1px;
+        font-weight: 700;
+        color: #062630;
+    }
+    
 
 }
 
@@ -465,8 +503,16 @@ h2{
     .membership-card{
         width: 400px;
     }
-    .membership-section{
-        margin-bottom: 120px;    
+    .start-container{
+        margin: auto;
+        justify-content: center;
+    }
+    .reviews-section {
+        text-align: center;
+    }
+    .reviews-section p{
+        margin: 0 auto;
+        max-width: 970px;
     }
 
 }
