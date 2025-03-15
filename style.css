@@ -15,7 +15,7 @@
 
     --neutral900:(#062630);
     --neutral700:(#385159);
-    --neutral200:(#E6E1DF);
+    --neutral200:(#e6e1df);
     --neutral100:(#FAF5F3);
     --neutral0:(#FFFFFF);
 
@@ -38,8 +38,10 @@
 
 
 header{
-    background-color: #FFF5EF;
-    background-image: url("./assets/images/pattern-dark-bg.svg");
+    background-color: rgb(255, 245, 239);
+    background-image: 
+    repeating-linear-gradient(0deg, rgba(56, 81, 89, 0.2) 0px, rgba(56, 81, 89, 0.2) 1px, transparent 0.5px, transparent 40px),
+    repeating-linear-gradient(90deg, rgba(56, 81, 89, 0.2) 0px, rgba(56, 81, 89, 0.2) 1px, transparent 0.5px, transparent 40px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -83,7 +85,7 @@ header nav{
     justify-content: center;
     white-space: nowrap;
     padding: 24px;
-    background: transparent;
+    background: #FFF5EF;
     border-radius: 8px;
     border: solid 2px #062630;
     font-size: 16px;
@@ -183,8 +185,10 @@ h2{
     border-radius: 12px;
     margin: 64px 16px;
     padding: 64px 16px;
-    background: rgb(250,245,243);
-    background: linear-gradient(150deg, rgba(250,245,243,1) 0%, rgba(230,225,223,1) 95%, rgba(6,38,48,1) 100%);
+    background-color: rgb(255, 245, 239);
+    background-image: 
+    repeating-linear-gradient(0deg, rgba(56, 81, 89, 0.2) 0px, rgba(56, 81, 89, 0.2) 1px, transparent 0.5px, transparent 40px),
+    repeating-linear-gradient(90deg, rgba(56, 81, 89, 0.2) 0px, rgba(56, 81, 89, 0.2) 1px, transparent 0.5px, transparent 40px);
 }
 
 .journey-section h2{
@@ -219,6 +223,96 @@ h2{
 
 .journey-item img{
     visibility: hidden;
+}
+
+.membership-section{
+    margin-bottom: 64px;    
+}
+
+.membership-section h2{
+    margin-bottom: 24px;
+}
+
+.membership-cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.membership-card{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #e6e1df;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+#pro{
+    background: rgb(250,245,243);
+    background: linear-gradient(150deg, rgba(250,245,243,1) 0%, rgba(230,225,223,1) 66%, rgba(56,81,89,1) 100%);
+}
+
+.membership-card .membership-card-text h3{
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: #062630;
+}
+
+.membership-card .membership-card-text p span{
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: #062630;
+}
+
+.membership-card .membership-card-text p {
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: #385159;
+    padding: 24px 0;
+    border-bottom: solid 1px #e6e1df;
+}
+
+.membership-card .membership-card-details{
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+} 
+
+.membership-detail{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.membership-detail p{
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: #385159;
+}
+
+.membership-card button{
+    margin-top: 32px;
+    padding: 24px 20px;
+    background-color: #FFF5EF;
+    border: solid 2px #062630;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: #062630;
+    cursor: pointer;
 }
 
 /* Tablet */
@@ -264,6 +358,21 @@ h2{
     }
     .journey-item p{
         font-size: 18px;
+    }
+    .membership-section h2{
+        font-size: 50px;
+        line-height: 130%;
+        letter-spacing: -2px;
+        margin-bottom: 40px;
+    }
+    .membership-cards-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .membership-card{
+        width: 340px;
     }
 
 }
@@ -343,6 +452,21 @@ h2{
         visibility: visible;
         right: 0;
         top: 0;
+    }
+    .membership-cards-container{
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    .membership-section h2{
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    .membership-card{
+        width: 400px;
+    }
+    .membership-section{
+        margin-bottom: 120px;    
     }
 
 }
