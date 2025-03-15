@@ -45,6 +45,7 @@ header{
     background-size: contain;
     min-height: 100vh;
     padding: 24px 16px;
+    padding-bottom: 80px;
 }
 
 header nav{
@@ -123,6 +124,55 @@ header nav{
     width: 100%;
 }
 
+.main-descriptions{
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    background-color: #FFFFFF;
+}
+
+.description-card h2{
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: -2px;
+    color: #062630;
+    margin-bottom: 24px;
+    padding-top: 64px;
+    position: relative;
+    z-index: 10;
+    
+}
+
+.description-card p{
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    font-family: "Inter", sans-serif;
+    color: #385159;
+}
+
+.description-item{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.description-card picture img{
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.circle {
+    position: absolute;
+    width: 100px;
+}
+
+
+.logos-tech{
+    visibility: hidden;
+}
 
 /* Tablet */
 
@@ -139,7 +189,81 @@ header nav{
     .left-hero button{
         max-width: 380px;
     }
+    .main-descriptions{
+        padding: 0 32px;
+    }
+    .description-card h2{
+        font-size: 50px;
+        padding-top: 80px;
+        padding-bottom: 34px;
+    }
+    .description-item{
+        gap: 24px;
+    }
+    .circle{
+        width: 140px;
+    }
+    #second-card{
+        position: relative;
+    }
+    .logos-tech{
+        visibility: visible;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
 }
 
 
 /* Desktop*/
+
+@media (min-width: 1040px) {
+    header{
+        padding: 32px 9.35%;
+    }
+    header nav{
+        margin-bottom: 80px;
+    }
+    .hero-container{
+        display: flex;
+        align-items: center;
+        gap: 64px;
+    }
+    .left-hero p{
+        margin-bottom: 32px;
+    }
+    .main-descriptions{
+        padding: 120px 9.35%;
+    }
+    .description-card{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 80px;
+        padding-bottom: 120px;
+    }
+    .description-item{
+
+        gap: 32px;
+    }
+    #second-card{
+        flex-direction: row;
+    }
+    #second-card div{
+        max-width: 550px;
+    }
+    #second-card div h2{
+        position: relative;
+        z-index: 10;
+    }
+    .logos-tech{
+        visibility: visible;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+}
