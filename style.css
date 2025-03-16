@@ -174,6 +174,7 @@ h2{
 .circle {
     position: absolute;
     width: 100px;
+    right: 15vw;
 }
 
 
@@ -339,6 +340,84 @@ h2{
     font-family: "Inter", sans-serif;
 }
 
+footer{
+    background-color: #062630;
+    border-radius: 20px 20px 0 0;
+}
+
+.footer-top{
+    padding: 48px 16px 64px 16px;
+    border-bottom: 1px solid #FAF5F3;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top h2{
+    color: #FAF5F3;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-top button{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    padding: 24px 20px;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -1px;
+    font-weight: 500;
+    color: #FFFFFF;
+    white-space: nowrap;
+    margin-bottom: 24px;
+}
+
+.avatars-footer{
+    display: flex;
+    align-items: center;
+}
+
+.avatars-footer img{
+    width: 40%;
+    margin-right: 12px;
+}
+
+.avatar-text-footer span{
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 16px;
+    padding: 24px 32px;
+}
+
+.footer-bottom p{
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+
+.footer-logos{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
 /* Tablet */
 
 @media (min-width: 767px) {
@@ -367,6 +446,7 @@ h2{
     }
     .circle{
         width: 140px;
+        right: 50vw;
     }
     #second-card{
         position: relative;
@@ -411,7 +491,31 @@ h2{
         font-weight: 700;
         color: #062630;
     }
-    
+    .footer-top{
+        align-items: center;
+        padding: 64px 32px;
+        border-bottom: 1px solid #FAF5F3;
+    }
+    .footer-top h2{
+        font-size: 50px;
+        line-height: 130%;
+        letter-spacing: -2px;
+        max-width: 685px;
+        margin-bottom: 40px;
+    }
+    .footer-top button{
+        max-width: 388px;
+        font-size: 18px;
+    }
+    .avatars-footer{
+        max-width: 388px;
+    }
+    .footer-bottom{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
 
 }
 
@@ -491,6 +595,9 @@ h2{
         right: 0;
         top: 0;
     }
+    .circle{
+        left: 0;     
+    }
     .membership-cards-container{
         flex-wrap: nowrap;
         justify-content: center;
@@ -513,6 +620,12 @@ h2{
     .reviews-section p{
         margin: 0 auto;
         max-width: 970px;
+    }
+    .footer-top{
+        margin: 0 135px;
+    }
+    .footer-bottom{
+        margin: 0 135px;
     }
 
 }
