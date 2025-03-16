@@ -27,8 +27,15 @@ Users should be able to:
 
 ### Screenshot
 
+#### Desktop
 ![](./assets/Capture-Tech%20book%20club.png)
+
+
+#### Tablet
 ![](./assets/Capture-Tech%20book%20club-Tablet.png)
+
+
+#### Phone
 ![](./assets/Capture-Tech%20book%20club-Phone.png)
 
 
